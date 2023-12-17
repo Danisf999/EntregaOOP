@@ -1,20 +1,24 @@
 using UnityEngine;
 
+//ABSTRACCION
 public abstract class Arma : MonoBehaviour
 {
-    [SerializeField] private GameObject pfArma;
-    [SerializeField] private GameObject pfBala;
-    [SerializeField] private AudioSource audioSource;
+                     //ENCAPSULAMIENTO
+    [SerializeField] private Transform _pfPosArma;
+    [SerializeField] private GameObject _pfBala;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
 
     public void Shoot()
     {
-        Instantiate(pfBala, pfArma.transform.position, Quaternion.identity);
+        Instantiate(_pfBala, _pfPosArma.position, Quaternion.identity);
     }
 
-    public void AudioShoot(AudioClip clip)
+    public void AudioShoot()
     {
-        audioSource.PlayOneShot(clip);
+        _audioSource.PlayOneShot(_audioClip);
     }
 
+    //ABSTRACCION
     public abstract void ArmaPosition();
 }

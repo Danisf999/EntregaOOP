@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6704576888250013914
 Transform:
   m_ObjectHideFlags: 0
@@ -35,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 2329260822190443154}
   - {fileID: 3519970437823528758}
+  - {fileID: 1442059598756879181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &978126970038967954
@@ -99,9 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e5255440e2a4f4fbf7de92621a1413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pfArma: {fileID: 4556643954381579336}
-  pfBala: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pfPosArma: {fileID: 1442059598756879181}
+  _pfBala: {fileID: 4249920071452897289, guid: 5c4bb9e9a229cc84ebae7fec3e2c43ed, type: 3}
+  _audioSource: {fileID: 2294568694330340709}
+  _audioClip: {fileID: 8300000, guid: 05365938ef571524395f0b132f6bcc4b, type: 3}
 --- !u!82 &2294568694330340709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -281,6 +283,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7527938294761198395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442059598756879181}
+  m_Layer: 0
+  m_Name: PosDisparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442059598756879181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527938294761198395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.013, z: -0.497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6704576888250013914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7872820829056407318
 GameObject:
   m_ObjectHideFlags: 0

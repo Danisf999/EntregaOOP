@@ -1,7 +1,8 @@
-public class Escopeta : Arma
+public class Escopeta : Arma //HERENCIA
 {
+    //POLIMORFISMO
     public override void ArmaPosition()
     {
-        throw new System.NotImplementedException();
+        transform.position = new UnityEngine.Vector3(0.22f, 2.7f, 1.21f);
     }
 }
